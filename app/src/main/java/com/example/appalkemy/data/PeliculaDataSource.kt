@@ -1,10 +1,13 @@
 package com.example.appalkemy.data
 
-class PeliculaDataSource {
+import com.example.appalkemy.repositorio.ServicioWeb
+import com.example.appalkemy.utilidades.Constantes
 
-    fun peliculasPopulares(): ListaPeliculas {
+class PeliculaDataSource (private val servicioWeb:ServicioWeb){
 
-        return ListaPeliculas()
+    suspend fun peliculasPopulares(): ListaPeliculas {
+
+        return servicioWeb.peliculasPopulares(Constantes.API_KEY)
     }
 
 }

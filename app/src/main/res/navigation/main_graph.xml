@@ -18,5 +18,30 @@
         android:id="@+id/fragmentDetalle"
         android:name="com.example.appalkemy.interfaceUsuario.FragmentDetalle"
         android:label="fragment_detalle"
-        tools:layout="@layout/fragment_detalle" />
+        tools:layout="@layout/fragment_detalle" >
+        <argument
+            android:name="posterUrl"
+            app:argType="string" />
+        <argument
+            android:name="imagenFondoUrl"
+            app:argType="string" />
+        <argument
+            android:name="votoPromedio"
+            app:argType="float" />
+        <argument
+            android:name="cantidadVotos"
+            app:argType="integer" />
+        <argument
+            android:name="resenia"
+            app:argType="string" />
+        <argument
+            android:name="titulo"
+            app:argType="string" />
+        <argument
+            android:name="lenguaje"
+            app:argType="string" />
+        <argument
+            android:name="lanzamiento"
+            app:argType="string" />
+    </fragment>
 </navigation>
